@@ -1,0 +1,5 @@
+# PlusStories.com Official Robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://plusstories.com/sitemap.xml
