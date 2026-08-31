@@ -1,8 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { CATEGORIES } from '@/data/categories';
-import { ShieldCheck, Mail, Globe, Sparkles } from 'lucide-react';
+import { Logo } from '@/components/Logo';
+import { ShieldCheck } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (
@@ -13,14 +13,7 @@ export const Footer: React.FC = () => {
           {/* Brand Info */}
           <div className="lg:col-span-2 space-y-4">
             <Link href="/" className="inline-block">
-              <div className="relative w-48 h-12 bg-white/10 rounded-lg p-2 backdrop-blur-sm border border-white/10">
-                <Image 
-                  src="/images/logo.jpg" 
-                  alt="PlusStories.com Official Logo" 
-                  fill 
-                  className="object-contain p-1"
-                />
-              </div>
+              <Logo variant="dark" />
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
               <strong>PlusStories.com</strong> is an independent multi-topic digital content publication covering Business, Finance, Technology, Healthcare, Services, and Home Decor. Delivering high-quality structured knowledge and semantic analysis.

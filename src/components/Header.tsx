@@ -2,9 +2,9 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
-import { Menu, X, Search, ChevronDown, BookOpen, Layers } from 'lucide-react';
+import { ChevronDown, Menu, X } from 'lucide-react';
 import { CATEGORIES } from '@/data/categories';
+import { Logo } from '@/components/Logo';
 
 export const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -16,16 +16,8 @@ export const Header: React.FC = () => {
         <div className="flex items-center justify-between h-20">
           
           {/* Brand Logo */}
-          <Link href="/" className="flex items-center space-x-3 group">
-            <div className="relative w-44 h-12 flex items-center">
-              <Image 
-                src="/images/logo.jpg" 
-                alt="PlusStories.com Official Logo - Multi-topic Digital Publishing Hub"
-                fill
-                priority
-                className="object-contain"
-              />
-            </div>
+          <Link href="/" className="group flex items-center">
+            <Logo variant="light" />
           </Link>
 
           {/* Desktop Navigation */}
