@@ -470,6 +470,7 @@ export default function CNLawBlogPage() {
           <li>Contact information</li>
           <li>Recent content</li>
         </ul>
+
         <p>before drawing conclusions.</p>
 
         <hr className="my-8 border-slate-200" />
@@ -664,10 +665,15 @@ export default function CNLawBlogPage() {
         <p>In practical terms, the site can be useful for someone who wants to answer a question before deciding whether deeper research is necessary.</p>
 
         <p>For example:</p>
+
         <p><strong>A student</strong> may want a simple explanation of a legal concept.</p>
+
         <p><strong>A business owner</strong> may want background information about a regulatory issue.</p>
+
         <p><strong>A homeowner</strong> may be researching a property-related subject.</p>
+
         <p><strong>A consumer</strong> may want to understand a legal or financial term.</p>
+
         <p><strong>A researcher</strong> may use an article as an entry point before examining primary sources.</p>
 
         <hr className="my-8 border-slate-200" />
