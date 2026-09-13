@@ -17,6 +17,13 @@ export const metadata: Metadata = {
     'plusstories categories',
     'plusstories safety check'
   ],
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' }
+    ],
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
   alternates: {
     canonical: 'https://plusstories.com',
   },
@@ -56,6 +63,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <JsonLdSchema />
       </head>
       <body className="min-h-screen flex flex-col justify-between bg-white text-slate-800">

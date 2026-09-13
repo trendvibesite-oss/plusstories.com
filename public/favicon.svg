@@ -1,0 +1,31 @@
+<svg viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)" />
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="512" y2="512">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="plusBlue" x1="0" y1="0" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="plusEmerald" x1="0" y1="0" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+  </defs>
+
+  <!-- Plus Emblem Base -->
+  <path d="M192 64 C192 46.3269 206.327 32 224 32 H288 C305.673 32 320 46.3269 320 64 V192 H448 C465.673 192 480 206.327 480 224 V288 C480 305.673 465.673 320 448 320 H320 V448 C320 465.673 305.673 480 288 480 H224 C206.327 480 192 465.673 192 448 V320 H64 C46.3269 320 32 305.673 32 288 V224 C32 206.327 46.3269 192 64 192 H192 V64 Z" fill="url(#plusBlue)" />
+
+  <!-- Accent Emerald Wing -->
+  <path d="M320 192 H448 C465.673 192 480 206.327 480 224 V288 C480 305.673 465.673 320 448 320 H320 V448 C320 465.673 305.673 480 288 480 H224 L320 192 Z" fill="url(#plusEmerald)" opacity="0.95" />
+
+  <!-- Open Digital Book Icon -->
+  <path d="M160 230 C190 205 235 205 256 225 C277 205 322 205 352 230 V345 C322 325 277 325 256 340 C235 325 190 325 160 345 Z" fill="#ffffff" />
+  <path d="M256 225 V340" stroke="#0284c7" stroke-width="16" stroke-linecap="round" />
+
+  <!-- Sparkles -->
+  <rect x="370" y="100" width="36" height="36" rx="8" fill="#34d399" />
+  <rect x="420" y="70" width="24" height="24" rx="6" fill="#38bdf8" />
+</svg>
