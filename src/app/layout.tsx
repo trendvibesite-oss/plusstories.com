@@ -5,15 +5,16 @@ import { Footer } from '@/components/Footer';
 import { JsonLdSchema } from '@/components/JsonLdSchema';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://plusstories.com'),
-  title: 'PlusStories.com: Digital Content Platform & Multi-Topic Publishing Hub',
-  description: 'PlusStories.com is an independent multi-topic digital content website publishing guides on Technology, Business, Healthcare, Services, and Home Decor.',
+  metadataBase: new URL('https://plusstoriescom.shop'),
+  title: 'PlusStories: Digital Content Platform & Multi-Topic Publishing Hub',
+  description: 'PlusStories is an independent multi-topic digital content website publishing guides on Technology, Business, Healthcare, Services, and Home Decor.',
   keywords: [
+    'plusstoriescom.shop',
     'plusstories.com',
     'plusstories com',
     'plusstories',
     'what is plusstories.com',
-    'plusstories.com digital publishing',
+    'plusstories digital publishing',
     'plusstories categories',
     'plusstories safety check'
   ],
@@ -25,19 +26,19 @@ export const metadata: Metadata = {
     apple: '/favicon.svg',
   },
   alternates: {
-    canonical: 'https://plusstories.com',
+    canonical: 'https://plusstoriescom.shop',
   },
   openGraph: {
-    title: 'PlusStories.com: Digital Content Platform & Multi-Topic Publishing Hub',
-    description: 'Comprehensive guide to PlusStories.com, its digital publishing model, category offerings, safety evaluation, and platform comparisons.',
-    url: 'https://plusstories.com',
-    siteName: 'PlusStories.com',
+    title: 'PlusStories: Digital Content Platform & Multi-Topic Publishing Hub',
+    description: 'Comprehensive guide to PlusStories, its digital publishing model, category offerings, safety evaluation, and platform comparisons.',
+    url: 'https://plusstoriescom.shop',
+    siteName: 'PlusStories',
     images: [
       {
         url: '/images/hero-banner.jpg',
         width: 1200,
         height: 675,
-        alt: 'PlusStories.com Digital Publishing Ecosystem',
+        alt: 'PlusStories Digital Publishing Ecosystem',
       },
     ],
     locale: 'en_US',
@@ -45,8 +46,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'PlusStories.com: Digital Content Platform & Multi-Topic Publishing Hub',
-    description: 'Explore what PlusStories.com is, what it offers, and key considerations for readers and content creators.',
+    title: 'PlusStories: Digital Content Platform & Multi-Topic Publishing Hub',
+    description: 'Explore what PlusStories is, what it offers, and key considerations for readers and content creators.',
     images: ['/images/hero-banner.jpg'],
   },
   robots: {
