@@ -687,101 +687,11 @@ export const ARTICLES: Article[] = [
     `,
     author: "Marcus Vance",
     authorRole: "Senior Business & Legal Analyst",
-    publishedAt: "2026-08-31",
+    publishedAt: "2026-09-13",
     readTime: "12 min read",
     categorySlug: "business",
     categoryName: "Business",
     tags: ["cnlawblog", "CNLawBlog", "Legal Content", "Business Law", "Chinese Law", "Digital Publishing"],
     featuredImage: "/images/cnlawblog-hero.jpg"
-  },
-  {
-    id: "1",
-    slug: "future-of-ai-digital-publishing-plusstories",
-    title: "The Future of AI in Digital Publishing: What Creators Need to Know",
-    excerpt: "Artificial intelligence is reshaping how content is drafted, published, and optimized online. Discover key strategies for leveraging AI ethically.",
-    content: `
-      <h2>The Intersection of AI and Modern Digital Publishing</h2>
-      <p>Artificial Intelligence (AI) has transitioned from an experimental novelty into a core engine of the digital publishing world.</p>
-    `,
-    author: "Elena Rostova",
-    authorRole: "Tech & AI Editor",
-    publishedAt: "2026-08-28",
-    readTime: "6 min read",
-    categorySlug: "tech",
-    categoryName: "Technology",
-    tags: ["Artificial Intelligence", "Digital Publishing", "SEO", "Tech Trends"],
-    featuredImage: "/images/hero-banner.jpg"
-  },
-  {
-    id: "2",
-    slug: "content-marketing-strategies-for-digital-growth",
-    title: "Mastering Content Marketing & Strategic Brand Growth in 2026",
-    excerpt: "Learn how modern businesses build high-authority publications, drive targeted organic traffic, and foster long-term customer engagement.",
-    content: `
-      <h2>Why Content Marketing is the Foundation of Digital Authority</h2>
-      <p>In today's competitive online marketplace, brand authority isn't bought—it's built through consistent, high-value publishing.</p>
-    `,
-    author: "Marcus Vance",
-    authorRole: "Senior Business Strategist",
-    publishedAt: "2026-08-25",
-    readTime: "8 min read",
-    categorySlug: "business",
-    categoryName: "Business",
-    tags: ["Business Growth", "Content Marketing", "Digital Strategy", "SEO"],
-    featuredImage: "/images/hero-banner.jpg"
-  },
-  {
-    id: "3",
-    slug: "evaluating-digital-services-and-b2b-solutions",
-    title: "Evaluating Professional Digital Services: A Complete Guide for Businesses",
-    excerpt: "Selecting the right B2B service providers requires due diligence, clear metrics, and transparent communication. Here is how to make informed decisions.",
-    content: `
-      <h2>Navigating the Modern B2B Service Landscape</h2>
-      <p>From YouTube marketing agencies to SEO consultancies, businesses rely on external services to scale operations.</p>
-    `,
-    author: "Sophia Chen",
-    authorRole: "Services Analyst",
-    publishedAt: "2026-08-22",
-    readTime: "5 min read",
-    categorySlug: "services",
-    categoryName: "Services",
-    tags: ["Professional Services", "B2B", "Digital Marketing", "Operations"],
-    featuredImage: "/images/hero-banner.jpg"
-  },
-  {
-    id: "4",
-    slug: "modern-interior-design-trends-sustainable-living",
-    title: "Modern Interior Design Trends: Creating Sustainable & Functional Home Spaces",
-    excerpt: "Discover how smart home technology, biophilic design elements, and minimalist aesthetics are redefining modern home decor.",
-    content: `
-      <h2>Harmonizing Functionality and Aesthetics in Modern Living</h2>
-      <p>Home decor is no longer just about visual appeal; it encompasses wellness, ergonomic design, and environmental sustainability.</p>
-    `,
-    author: "Claire Dubois",
-    authorRole: "Lifestyle & Decor Columnist",
-    publishedAt: "2026-08-20",
-    readTime: "7 min read",
-    categorySlug: "home-decor",
-    categoryName: "Home Decor",
-    tags: ["Interior Design", "Sustainable Living", "Smart Home", "Home Decor"],
-    featuredImage: "/images/hero-banner.jpg"
-  },
-  {
-    id: "5",
-    slug: "preventive-healthcare-and-daily-wellness-habits",
-    title: "Preventive Healthcare & Daily Wellness: Evidence-Based Habits for Longevity",
-    excerpt: "A practical guide to incorporating preventive health practices, balanced nutrition, and daily movement into a busy lifestyle.",
-    content: `
-      <h2>The Shift Toward Proactive Wellness</h2>
-      <p>Modern healthcare emphasizes preventive strategies rather than reactive treatment.</p>
-    `,
-    author: "Dr. Jonathan Hayes",
-    authorRole: "Health & Wellness Advisor",
-    publishedAt: "2026-08-18",
-    readTime: "9 min read",
-    categorySlug: "healthcare",
-    categoryName: "Healthcare",
-    tags: ["Healthcare", "Wellness", "Preventive Health", "Nutrition"],
-    featuredImage: "/images/hero-banner.jpg"
   }
 ];

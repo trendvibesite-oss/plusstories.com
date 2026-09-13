@@ -60,7 +60,7 @@ export default function CNLawBlogPage() {
         "url": "https://plusstoriescom.shop/favicon.svg"
       }
     },
-    "datePublished": "2026-08-31",
+    "datePublished": "2026-09-13",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://plusstoriescom.shop/cnlawblog/"
@@ -104,7 +104,7 @@ export default function CNLawBlogPage() {
             </div>
             <span className="flex items-center">
               <Calendar className="w-4 h-4 mr-1 text-slate-400" />
-              2026-08-31
+              2026-09-13
             </span>
             <span className="flex items-center">
               <Clock className="w-4 h-4 mr-1 text-slate-400" />
@@ -987,16 +987,18 @@ export default function CNLawBlogPage() {
       </div>
 
       {/* Related Articles */}
-      <div className="pt-12 border-t border-slate-200 space-y-6">
-        <h3 className="text-2xl font-bold text-slate-900">
-          Related Guides in Business &amp; Digital Publishing
-        </h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {relatedArticles.map((rel) => (
-            <ArticleCard key={rel.id} article={rel} />
-          ))}
+      {relatedArticles.length > 0 && (
+        <div className="pt-12 border-t border-slate-200 space-y-6">
+          <h3 className="text-2xl font-bold text-slate-900">
+            Related Guides in Business &amp; Digital Publishing
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {relatedArticles.map((rel) => (
+              <ArticleCard key={rel.id} article={rel} />
+            ))}
+          </div>
         </div>
-      </div>
+      )}
 
     </article>
   );
