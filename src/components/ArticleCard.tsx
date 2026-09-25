@@ -35,7 +35,7 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({ article }) => {
             </span>
           </div>
           <h3 className="text-lg font-bold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2 mb-2 leading-snug">
-            <Link href={`/articles/${article.slug}`}>
+            <Link href={`/${article.slug}/`}>
               {article.title}
             </Link>
           </h3>
@@ -49,7 +49,7 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({ article }) => {
             <span>{article.author}</span>
           </div>
           <Link
-            href={`/articles/${article.slug}`}
+            href={`/${article.slug}/`}
             className="text-xs font-bold text-brand-600 hover:text-brand-700 flex items-center"
           >
             Read <ArrowUpRight className="w-3.5 h-3.5 ml-0.5" />
