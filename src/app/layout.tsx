@@ -18,6 +18,9 @@ export const metadata: Metadata = {
     'plusstories categories',
     'plusstories safety check'
   ],
+  verification: {
+    google: 'aZRSqwKJUtYBlBJqf940PgoMwqCWnkHdDVO8Cn52sm8',
+  },
   icons: {
     icon: [
       { url: '/favicon.svg', type: 'image/svg+xml' }
@@ -64,6 +67,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="google-site-verification" content="aZRSqwKJUtYBlBJqf940PgoMwqCWnkHdDVO8Cn52sm8" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <JsonLdSchema />
       </head>
