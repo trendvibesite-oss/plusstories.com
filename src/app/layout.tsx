@@ -70,6 +70,20 @@ export default function RootLayout({
         <meta name="google-site-verification" content="aZRSqwKJUtYBlBJqf940PgoMwqCWnkHdDVO8Cn52sm8" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <JsonLdSchema />
+
+        {/* Google Analytics (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-MBFGT1V8KN" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'G-MBFGT1V8KN');
+            `,
+          }}
+        />
       </head>
       <body className="min-h-screen flex flex-col justify-between bg-white text-slate-800">
         <Header />
