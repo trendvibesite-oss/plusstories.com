@@ -2,13 +2,11 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { ChevronDown, Menu, X } from 'lucide-react';
-import { CATEGORIES } from '@/data/categories';
+import { Menu, X } from 'lucide-react';
 import { Logo } from '@/components/Logo';
 
 export const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
@@ -29,39 +27,26 @@ export const Header: React.FC = () => {
               Home
             </Link>
 
-            {/* Categories Dropdown */}
-            <div 
-              className="relative group"
-              onMouseEnter={() => setIsDropdownOpen(true)}
-              onMouseLeave={() => setIsDropdownOpen(false)}
+            <Link 
+              href="/category/business" 
+              className="text-slate-700 hover:text-brand-600 font-medium transition-colors text-sm"
             >
-              <button 
-                className="flex items-center space-x-1 text-slate-700 hover:text-brand-600 font-medium transition-colors text-sm py-2"
-                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-              >
-                <span>Categories</span>
-                <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
-              </button>
+              Business
+            </Link>
 
-              {/* Dropdown Menu */}
-              {isDropdownOpen && (
-                <div className="absolute top-full left-0 w-64 bg-white rounded-xl shadow-xl border border-slate-100 py-3 z-50 animate-in fade-in slide-in-from-top-2 duration-150">
-                  <div className="px-4 py-2 border-b border-slate-100 font-semibold text-xs text-slate-400 uppercase tracking-wider">
-                    Topics & Hubs
-                  </div>
-                  {CATEGORIES.map((cat) => (
-                    <Link
-                      key={cat.slug}
-                      href={`/category/${cat.slug}`}
-                      className="flex items-center px-4 py-2.5 text-sm text-slate-700 hover:bg-brand-50 hover:text-brand-600 transition-colors"
-                      onClick={() => setIsDropdownOpen(false)}
-                    >
-                      <span className="font-medium">{cat.name}</span>
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
+            <Link 
+              href="/category/tech" 
+              className="text-slate-700 hover:text-brand-600 font-medium transition-colors text-sm"
+            >
+              Tech
+            </Link>
+
+            <Link 
+              href="/category/services" 
+              className="text-slate-700 hover:text-brand-600 font-medium transition-colors text-sm"
+            >
+              Services
+            </Link>
 
             <Link 
               href="/about" 
@@ -69,22 +54,15 @@ export const Header: React.FC = () => {
             >
               About Us
             </Link>
-
-            <Link 
-              href="/contact" 
-              className="text-slate-700 hover:text-brand-600 font-medium transition-colors text-sm"
-            >
-              Contact Us
-            </Link>
           </nav>
 
-          {/* Action CTA */}
+          {/* Action CTA Button */}
           <div className="hidden md:flex items-center space-x-4">
             <Link
-              href="/#faq"
+              href="/contact"
               className="bg-brand-600 hover:bg-brand-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all shadow-md shadow-brand-500/20 hover:shadow-lg"
             >
-              Explore FAQs
+              Contact Us
             </Link>
           </div>
 
@@ -112,19 +90,31 @@ export const Header: React.FC = () => {
           >
             Home
           </Link>
-          <div className="px-3 py-1 font-semibold text-xs text-slate-400 uppercase tracking-wider">
-            Categories
-          </div>
-          {CATEGORIES.map((cat) => (
-            <Link
-              key={cat.slug}
-              href={`/category/${cat.slug}`}
-              className="block pl-6 pr-3 py-2 rounded-md text-sm font-medium text-slate-600 hover:text-brand-600 hover:bg-slate-50"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              {cat.name}
-            </Link>
-          ))}
+
+          <Link
+            href="/category/business"
+            className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-slate-50"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            Business
+          </Link>
+
+          <Link
+            href="/category/tech"
+            className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-slate-50"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            Tech
+          </Link>
+
+          <Link
+            href="/category/services"
+            className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-slate-50"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            Services
+          </Link>
+
           <Link
             href="/about"
             className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-slate-50"
@@ -132,13 +122,16 @@ export const Header: React.FC = () => {
           >
             About Us
           </Link>
-          <Link
-            href="/contact"
-            className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-slate-50"
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
-            Contact Us
-          </Link>
+
+          <div className="pt-2">
+            <Link
+              href="/contact"
+              className="block w-full text-center bg-brand-600 hover:bg-brand-700 text-white font-semibold px-4 py-2.5 rounded-full transition-all shadow-md"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Contact Us
+            </Link>
+          </div>
         </div>
       )}
     </header>
