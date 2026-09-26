@@ -458,9 +458,11 @@ export default function HomePage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {ARTICLES.map((article) => (
-            <ArticleCard key={article.id} article={article} />
-          ))}
+          {[...ARTICLES]
+            .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
+            .map((article) => (
+              <ArticleCard key={article.id} article={article} />
+            ))}
         </div>
       </section>
 
