@@ -28,6 +28,13 @@ export const Header: React.FC = () => {
             </Link>
 
             <Link 
+              href="/blog" 
+              className="text-slate-700 hover:text-brand-600 font-medium transition-colors text-sm"
+            >
+              Blog
+            </Link>
+
+            <Link 
               href="/category/business" 
               className="text-slate-700 hover:text-brand-600 font-medium transition-colors text-sm"
             >
@@ -92,7 +99,15 @@ export const Header: React.FC = () => {
           </Link>
 
           <Link
-            href="/category/business"
+            href="/blog"
+            className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-slate-50"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            Blog
+          </Link>
+
+          <Link
+            href="/category/business" 
             className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-slate-50"
             onClick={() => setIsMobileMenuOpen(false)}
           >
