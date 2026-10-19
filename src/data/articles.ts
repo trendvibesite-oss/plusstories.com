@@ -826,5 +826,24 @@ export const ARTICLES: Article[] = [
     categoryName: "Business",
     tags: ["adswynk com", "Adswynk", "Business", "Digital Publishing", "URL Shortener", "Monetization"],
     featuredImage: "/images/adswynk-hero.jpg"
+  },
+  {
+    id: "computer-associates-santa-clara",
+    slug: "computer-associates-santa-clara",
+    title: "Computer Associates Santa Clara: Company History, Software Products, and Technology Legacy",
+    excerpt: "Explore the history of Computer Associates Santa Clara, its enterprise software evolution into CA Technologies, Broadcom acquisition, and Silicon Valley technology legacy.",
+    content: `
+      <p>Computer Associates Santa Clara is a search term associated with Computer Associates, commonly known as CA, its enterprise software business, and its connection to Silicon Valley's technology industry. The company built a reputation for developing software that helped large organizations manage complex computer systems, protect business data, automate IT operations, and maintain critical applications.</p>
+      <p>Computer Associates later became known as CA Technologies. In November 2018, Broadcom completed its acquisition of CA Technologies, bringing the company's enterprise software portfolio into Broadcom's broader infrastructure software business.</p>
+      <p>For more such useful information read our site <a href="https://plusstoriescom.shop/">plusstoriescom.shop</a></p>
+    `,
+    author: "Marcus Vance",
+    authorRole: "Senior Business & Technology Analyst",
+    publishedAt: "2026-10-19",
+    readTime: "14 min read",
+    categorySlug: "business",
+    categoryName: "Business",
+    tags: ["computer associates santa clara", "Computer Associates", "CA Technologies", "Broadcom", "Enterprise Software", "Business", "Silicon Valley"],
+    featuredImage: "/images/computer-associates-santa-clara-hero.jpg"
   }
 ];
